@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Azeret Mono', monospace;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.5s linear;
+}
+
+:root {
+  --green: #0cf20c;
+}
+
+*::selection {
+  background-color: var(--green);
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  background-color: #74afeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .perfil-avatar img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.7rem solid var(--green);
+}
+
+header .perfil-avatar .name-perfil-avatar {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+header .perfil-avatar .texto-postagem {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header .navbar {
+  width: 100%;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: #368ee7;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+  background-color: var(--green);
+}
+
+/* Menu bars */
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #74afeb;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15rem;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.home h3 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.home h3 span {
+  color: var(--green);
+}
+
+.home p {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.btn {
+  padding: 0.7rem 3rem;
+  background-color: #f29a16;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.btn:hover {
+  background-color: var(--green);
+}
+
+/* Responsivo 1200px */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home {
+    padding: 1rem 4rem;
+  }
+}
+
+/* Responsivo 992px */
+@media (max-width: 992px) {
+  header {
+    left: -120%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  header.toggle {
+    left: 0%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+/* Responsivo 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
