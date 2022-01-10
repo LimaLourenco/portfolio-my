@@ -330,40 +330,8 @@ section {
   .portfolio .box-content img {
     width: 100%;
   }
-}
 
-@media (max-width: 476px) {
-  header {
-    width: 100vw;
-  }
-
-  .heading {
-    margin: 0 3rem;
-  }
-
-  .sobre .row .habilidades .box {
-    width: 100%;
-  }
-
-  .portfolio .box-content img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 390px) {
-  header {
-    width: 100vw;
-  }
-
-  .heading {
-    margin: 0 3rem;
-  }
-
-  .sobre .row .habilidades .box {
-    width: 100%;
-  }
-
-  .portfolio .box-content img {
+  .contato .row .conteudo .info {
     width: 100%;
   }
 }
